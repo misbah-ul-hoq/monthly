@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monthlly Sells and Stock Report</title>
+    <link rel="stylesheet" href="animate.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+    <div class="container">
+      <h2>Dhamrai Depot</h2>
+      <div class="heading">
+        <h3>Monthly Sell and Stock Report</h3>
+      </div>
+      <input type="text" class="month" />
+      <!-- <div class="month">September, 2023</div> -->
+
+      <table>
+        <tr class="row-1">
+          <td class="col-1">Item's Name</td>
+          <td class="col-2">Opening</td>
+          <td class="col-3">
+            <textarea
+              name=""
+              id=""
+              cols="10"
+              rows="3"
+              spellcheck="false"
+              style="
+                font-size: 16px;
+                background-color: inherit;
+                color: white;
+                border: none;
+                outline: none;
+                text-align: center;
+                overflow: hidden;
+              "
+            >
+            Received Bhaluka
+           </textarea
+            >
+          </td>
+          <td class="col-4">
+            <textarea
+              name=""
+              id=""
+              cols="10"
+              rows="3"
+              spellcheck="false"
+              style="
+                font-size: 16px;
+                background-color: inherit;
+                color: white;
+                border: none;
+                outline: none;
+                text-align: center;
+                overflow: hidden;
+              "
+            >
+          Received Bogura
+         </textarea
+            >
+          </td>
+          <td class="col-5">
+            <textarea
+              name=""
+              id=""
+              cols="10"
+              rows="3"
+              spellcheck="false"
+              style="
+                font-size: 16px;
+                background-color: inherit;
+                color: white;
+                border: none;
+                outline: none;
+                text-align: center;
+                overflow: hidden;
+              "
+            >
+          Received Sreepur
+         </textarea
+            >
+          </td>
+          <td class="col-6">Total Received</td>
+          <td class="col-7">Return</td>
+          <td class="col-8">Distribution</td>
+          <td class="col-9">Closing</td>
+        </tr>
+
+        <tr class="row-2">
+          <td class="col-1">Broiler</td>
+          <td class="col-2"><input type="number" id="br-op" /></td>
+          <td class="col-3"><input type="number" id="br-re-bh" /></td>
+          <td class="col-4"><input type="number" id="br-re-bo" /></td>
+          <td class="col-5"><input type="number" id="br-re-sr" /></td>
+          <td class="br-total-rec"></td>
+          <td class="col-6"><input type="number" id="br-ret" /></td>
+          <td class="col-7"><input type="number" id="br-dis" /></td>
+          <td class="br-cls col-8"></td>
+        </tr>
+
+        <tr class="row-3">
+          <td class="col-1">Layer</td>
+          <td class="col-2"><input type="number" id="lr-op" /></td>
+          <td class="col-3"><input type="number" id="lr-re-bh" /></td>
+          <td class="col-4"><input type="number" id="lr-re-bo" /></td>
+          <td class="col-5"><input type="number" id="lr-re-sr" /></td>
+          <td class="lr-total-rec"></td>
+          <td class="col-6"><input type="number" id="lr-ret" /></td>
+          <td class="col-7"><input type="number" id="lr-dis" /></td>
+          <td class="lr-cls col-8"></td>
+        </tr>
+
+        <tr class="row-4">
+          <td class="col-1">Sonali</td>
+          <td class="col-2"><input type="number" id="sl-op" /></td>
+          <td class="col-3"><input type="number" id="sl-re-bh" /></td>
+          <td class="col-4"><input type="number" id="sl-re-bo" /></td>
+          <td class="col-5"><input type="number" id="sl-re-sr" /></td>
+          <td class="sl-total-rec"></td>
+          <td class="col-6"><input type="number" id="sl-ret" /></td>
+          <td class="col-7"><input type="number" id="sl-dis" /></td>
+          <td class="sl-cls col-8"></td>
+        </tr>
+
+        <tr class="row-5">
+          <td class="col-1">Cattle</td>
+          <td class="col-2"><input type="number" id="ct-op" /></td>
+          <td class="col-3"><input type="number" id="ct-re-bh" /></td>
+          <td class="col-4"><input type="number" id="ct-re-bo" /></td>
+          <td class="col-5"><input type="number" id="ct-re-sr" /></td>
+          <td class="ct-total-rec"></td>
+          <td class="col-6"><input type="number" id="ct-ret" /></td>
+          <td class="col-7"><input type="number" id="ct-dis" /></td>
+          <td class="ct-cls col-8"></td>
+        </tr>
+
+        <tr class="row-6">
+          <td class="col-1">Floating</td>
+          <td class="col-2"><input type="number" id="fl-op" /></td>
+          <td class="col-3"><input type="number" id="fl-re-bh" /></td>
+          <td class="col-4"><input type="number" id="fl-re-bo" /></td>
+          <td class="col-5"><input type="number" id="fl-re-sr" /></td>
+          <td class="fl-total-rec"></td>
+          <td class="col-6"><input type="number" id="fl-ret" /></td>
+          <td class="col-7"><input type="number" id="fl-dis" /></td>
+          <td class="fl-cls col-8"></td>
+        </tr>
+
+        <tr class="row-7">
+          <td class="col-1">Sinking</td>
+          <td class="col-2"><input type="number" id="sk-op" /></td>
+          <td class="col-3"><input type="number" id="sk-re-bh" /></td>
+          <td class="col-4"><input type="number" id="sk-re-bo" /></td>
+          <td class="col-5"><input type="number" id="sk-re-sr" /></td>
+          <td class="sk-total-rec"></td>
+          <td class="col-6"><input type="number" id="sk-ret" /></td>
+          <td class="col-7"><input type="number" id="sk-dis" /></td>
+          <td class="sk-cls col-8"></td>
+        </tr>
+
+        <tr class="row-8">
+          <td class="col-1">Total</td>
+          <td class="col-2 total-open"></td>
+          <td class="col-3 total-re-bh"></td>
+          <td class="col-4 total-re-bo"></td>
+          <td class="col-5 total-re-sr"></td>
+          <td class="total-rec"></td>
+          <td class="col-6 total-ret"></td>
+          <td class="col-7 total-dis"></td>
+          <td class="col-8 total-cls"></td>
+        </tr>
+      </table>
+
+      <button>Calculate</button>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
